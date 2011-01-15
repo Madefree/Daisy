@@ -2,11 +2,9 @@
 #
 # Python collection of class that allows to easily manage the Daisy 
 # building modules made by Acme Systems srl.
-# http://www.acmesystems.it/foxg20
+# http://foxg20.acmesystems.it
 #
 # (C) 2010 Sergio Tanzilli <tanzilli@acmesystems.it>
-#
-# Version 14 january 2010
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,6 +12,13 @@
 # (at your option) any later version.
 
 import os.path
+
+# Daisy connectors pin assignments
+#
+# D1, D2, etc are the connector names on Daisy1 adapter
+# http://foxg20.acmesystems.it/doku.php?id=daisy:adapter
+#
+# 'pin number', 'kernel id'  # pin descriptio
 
 D1_kernel_ids = {
 	'1' :  0,  #3V3
@@ -119,6 +124,8 @@ D8_kernel_ids = {
 	'9' :   0, #5V0
 	'10':   0, #GND
 }
+
+# Kernel ids descriptor for each connector
 
 daisy_connectors = {
 	'D1' :  D1_kernel_ids,
