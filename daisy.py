@@ -4,7 +4,7 @@
 # building modules made by Acme Systems srl.
 # http://foxg20.acmesystems.it
 #
-# (C) 2010 Sergio Tanzilli <tanzilli@acmesystems.it>
+# (C) 2011 Sergio Tanzilli <tanzilli@acmesystems.it>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@ import os.path
 # D1, D2, etc are the connector names on Daisy1 adapter
 # http://foxg20.acmesystems.it/doku.php?id=daisy:adapter
 #
-# 'pin number', 'kernel id'  # pin descriptio
+# 'pin number', 'kernel id'  # pin description
 
 D1_kernel_ids = {
 	'1' :  0,  #3V3

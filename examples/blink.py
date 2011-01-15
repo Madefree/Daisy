@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import daisy
 import time
  
