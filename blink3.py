@@ -2,7 +2,8 @@ import time
 import thread
 import threading
 import daisy
- 
+
+#Commento di prova 
 def check_button(button,led):
 	while True:
 		if button.pressed():
