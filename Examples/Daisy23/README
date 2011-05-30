@@ -1,0 +1,347 @@
+Python library to manage Daisy23-LCD + TouchButton Panel
+
+2011 - Daniele Sdei, Marco Antonini
+
+http://www.madefree.eu
+http://wiki.madefree.eu
+http://git.madefree.eu
+
+Method:
+
+mpr_init()
+	Description
+
+	MPR121 initialization.
+
+	Syntax
+
+	panel.mpr_init()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+mpr_irq()
+
+	Description
+
+	Returns True if electrode status changes, False otherwise.
+
+	Syntax
+
+	panel.mpr_irq()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+button_state()
+
+	Description
+
+	Returns the number of buttons pressed and a list of these.
+
+Syntax
+
+	panel.button_state()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+button_read()
+	Description
+
+	Returns a string that specifies the button pressed (Up, Down, Left, Right, Center).
+
+	Syntax
+
+	panel.button_read()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_lightOn()
+
+	Description
+
+	Turn the LCD backlight on.
+
+	Syntax
+
+	panel.lcd_lightOn()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_lightOff()
+
+	Description
+
+	Turn the LCD backlight off.
+
+	Syntax
+
+	panel.lcd_lightOff()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_setLight()
+
+	Description
+
+	Set the LCD backlight intensity.
+
+	Syntax
+
+	panel.lcd_setLight(value)
+
+	Parameters
+
+	panel: a variable of type Daisy23
+	value: an integer >=0 and <16
+
+lcd_init()
+
+	Description
+
+	The initialization of LCD to default values.
+
+	Syntax
+
+	panel.lcd_init()
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_print()
+
+	Description
+
+	Prints text to the LCD
+
+	Syntax
+
+	panel.lcd_print(data)
+
+	Parameters
+
+	panel: a variable of type Daisy23
+	data: the data to print
+
+lcd_clear()
+
+	Description
+
+	Clears the LCD screen and positions the cursor in the upper-left corner.
+
+	Syntax
+
+	panel.lcd_clear()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_home()
+
+	Description
+
+	Positions the cursor in the upper-left corner.
+
+	Syntax
+
+	panel.lcd_home()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_setCursor()
+
+	Description
+
+	Position the LCD cursor
+
+	Syntax
+
+	panel.lcd_setCursor(col, row)
+
+	Parameters
+
+	panel: a variable of type Daisy23
+	col: the column at which to position the cursor (with 0 being the first column)
+	row: the row at which to position the cursor (with 0 being the first row)
+
+lcd_display()
+
+	Description
+
+	Turns on the LCD display, after it's been turned off with lcd_noDisplay(). This will restore the text (and cursor) that was on the display.
+
+	Syntax
+
+	panel.lcd_display()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_noDisplay()
+
+	Description
+
+	Turns off the LCD display, without losing the text currently shown on it.
+
+	Syntax
+
+	panel.lcd_noDisplay()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_cursor()
+
+	Description
+
+	Display the LCD cursor: an underscore (line) at the position to which the next character will be written.
+
+	Syntax
+
+	panel.lcd_cursor()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_noCursor()
+
+	Description
+
+	Hides the LCD cursor.
+
+	Syntax
+
+	panel.lcd_noCursor()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_blink()
+
+	Description
+
+	Display the blinking LCD cursor.
+
+	Syntax
+
+	panel.lcd_blink()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_noBlink()
+
+	Description
+
+	Turns off the blinking LCD cursor.
+
+	Syntax
+
+	panel.lcd_noBlink()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_scrollDisplayLeft()
+
+	Description
+
+	Scrolls the contents of the display (text and cursor) one space to the left.
+
+	Syntax
+
+	panel.lcd_scrollDisplayLeft()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_scrollDisplayRight()
+
+	Description
+
+	Scrolls the contents of the display (text and cursor) one space to the right.
+
+	Syntax
+
+	panel.lcd_scrollDisplayRight()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_leftToRight()
+
+	Description
+
+	Set the direction for text written to the LCD to left-to-right, the default. This means that subsequent characters written to the display will go from left to right, but does not affect previously-output text.
+
+	Syntax
+
+	panel.lcd_leftToRight()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_rightToLeft()
+
+	Description
+
+	Set the direction for text written to the LCD to right-to-left (the default is left-to-right). This means that subsequent characters written to the display will go from right to left, but does not affect previously-output text.
+
+	Syntax
+
+	panel.lcd_rightToLeft()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_autoscroll()
+
+	Description
+
+	Turns on automatic scrolling of the LCD. This causes each character output to the display to push previous characters over by one space. If the current text direction is left-to-right (the default), the display scrolls to the left; if the current direction is right-to-left, the display scrolls to the right.
+
+	Syntax
+
+	panel.lcd_autoscroll()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
+lcd_noAutoscroll()
+
+	Description
+
+	Turns off automatic scrolling of the LCD.
+
+	Syntax
+
+	panel.lcd_noAutoscroll()
+
+	Parameters
+
+	panel: a variable of type Daisy23
+
