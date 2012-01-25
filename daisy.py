@@ -391,7 +391,7 @@ class Daisy23():
 
 	# Returns True if electrode status changes, False otherwise.
 	def mpr_irq(self):
-		if self.mpr_irq_id.get_value():
+		if get_value(self.mpr_irq_id):
 			return False
 		else:
 			return True
