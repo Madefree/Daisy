@@ -1,7 +1,7 @@
 import daisy
 import time
 
-panel = daisy.Daisy23(0,0x5A,'D1','5')
+panel = daisy.Daisy23(0,0x5A,'D6','6')
 panel.mpr_init()
 panel.lcd_init()
 
